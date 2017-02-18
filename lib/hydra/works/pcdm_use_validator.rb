@@ -66,7 +66,7 @@ module Hydra::Works
 
       # Returns a list of pcdm:uses that are limited to one according to the
       # config.
-      def pcdm_uses_limted_to_one
+      def pcdm_uses_limited_to_one
         config.select do |_pcdm_use, options|
           !options[:multiple]
         end
