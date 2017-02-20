@@ -25,8 +25,8 @@ module Hydra::Works
     # TODO: Add informative error messages, complete with helpful suggestions.
     # TODO: Ok to namespace these error under Hydra::Works::PcdmUseValidator class?
     class InvalidPcdmUse < StandardError; end
-    class MissingRequiredPcdmUse < StandardError; end
-    class DuplicatePcdmUseNotAllowed < StandardError; end
+    class MissingPcdmUse < StandardError; end
+    class DuplicatePcdmUse < StandardError; end
 
     private
 

@@ -21,7 +21,7 @@ describe Hydra::Works::PcdmUseValidator do
       end
     end
     context "with a duplicate pcdm use" do
-      xit "raises a DuplicatePcdmUseNotAllowed error" do
+      xit "raises a DuplicatePcdmUse error" do
         allow(file_set).to receive(:files).and_return([file1, file2])
         allow(file1).to receive(:type).and_return("valid type")
         allow(file2).to receive(:type).and_return("valid type")
